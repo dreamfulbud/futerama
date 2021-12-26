@@ -21,18 +21,8 @@ export const CastContainer = () => {
           return (
             <li key={`futurama-cast-${id}`}>
               <h3>{name}</h3>
-              <dl>
-                <div>
-                  <dt>born</dt>
-                  <dd>{born}</dd>
-                </div>
-                <div>
-                  <dt>bio</dt>
-                  <dd>
-                    <Link href={bio.url}><a>URL</a></Link></dd>
-                </div>
-
-              </dl>
+              <p><span>Birth</span> {born}</p>
+              <Link href={bio.url}><a>More</a></Link>
             </li>
           )
         })}
@@ -50,6 +40,23 @@ const Ul = styled.ul`
   grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
   @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
     grid-template-columns: repeat(3, calc((100% - 2rem * 2) / 3));
+  }
+
+  li{text-align:center;}
+  p {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    span{
+      font-size: 0.7em;
+      text-transform: uppercase;
+      background: #eee;
+      border-radius: 2rem;
+      padding: 0.05em 0.8em 0.02em;
+      margin-right:1rem;
+      line-height:1.8;
+    }
   }
 
 `

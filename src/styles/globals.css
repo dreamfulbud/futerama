@@ -177,7 +177,7 @@ main > h2::first-letter {
   text-transform: uppercase;
 }
 
-main ul li {
+main > ul > li {
   background: #fff;
   border-radius: 2rem;
   border: 1px solid #f5f5f5;
@@ -187,7 +187,7 @@ main ul li {
   position: relative;
 }
 
-main ul li h3 {
+main > ul > li h3 {
   font-weight: bold;
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
@@ -213,7 +213,7 @@ dl div dt {
   padding: 0.05em 0.8em 0.02em;
 }
 
-dl a {
+main ul li a {
   color: royalblue;
   text-decoration: underline;
 }
