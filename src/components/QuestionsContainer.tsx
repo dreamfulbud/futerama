@@ -94,6 +94,10 @@ const List = styled.ul`
   gap:1rem;
   justify-content:center;
   flex-wrap:wrap;
+  flex-direction:column;
+  @media (min-width: ${MEDIA_QUERY_END_POINT.DESKTOP}) {
+    flex-direction:row;
+  }
 
   li{
     position:relative;

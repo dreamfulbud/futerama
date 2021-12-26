@@ -51,6 +51,7 @@ const Ul = styled.ul`
     justify-content:center;
     margin-bottom:1rem;
     gap:2rem;
+    flex-wrap:wrap;
   }
   dl + p{text-align:center; max-width:800px; margin:0 auto;}
 
