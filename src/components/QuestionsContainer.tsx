@@ -9,9 +9,6 @@ export const QuestionsContainer = () => {
   const name = 'questions';
   const { data, error } = useData(name);
 
-  const buttonHandler = (event) => {
-    event.currentTarget.nextSibling.classList.toggle('on');
-  }
 
   if (error) return <Error />
   if (!data) return <Loading />
@@ -24,7 +21,7 @@ export const QuestionsContainer = () => {
           const { question, possibleAnswers, correctAnswer, id } = questionsData;
           return (
             <li key={`futurama-cast-${id}`}>
-              <button onClick={buttonHandler}>
+              <button>
                 <span>Q</span>
                 <span>{question}</span>
               </button>
@@ -62,11 +59,12 @@ const Ul = styled.ul`
     }
   }
   button{cursor:point; width:100%;}
-  p{ display:none; height:0; width:100%;
-    padding:0 1em;  opacity:0; font-weight:bold; color:#E44047;
-    
+  p{ 
+    /* display:none; height:0;  opacity:0; padding:0 1em;  */
+    display:flex; height:auto; opacity:1; padding:0 1em 1em 1em;
+    width:100%; font-weight:bold; color:#E44047;
     span:first-child{ background:#ffe591; }
   }
-  p.on{display:flex; height:auto; opacity:1; padding:0 1em 1em 1em;}
+  /* p.on{display:flex; height:auto; opacity:1; padding:0 1em 1em 1em;} */
 
 `
