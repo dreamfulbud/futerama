@@ -17,7 +17,7 @@ export const CastContainer = () => {
       <h2>{name}</h2>
       <Ul>
         {data.map((castData: Cast) => {
-          const { name, born, died, bio, id } = castData;
+          const { name, born, bio, id } = castData;
           return (
             <li key={`futurama-cast-${id}`}>
               <h3>{name}</h3>

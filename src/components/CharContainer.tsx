@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Error, Loading } from '.';
 import { useData } from '../hooks/useData';
 import { Characters } from '../types/Characters';
@@ -16,12 +17,12 @@ export const CharContainer = () => {
       <h2>{name}</h2>
       <Ul>
         {data.map((charData: Characters) => {
-          const { images, name, sayings, gender, species, homePlanet, occupation, age, id } = charData;
+          const { images, name, sayings, gender, species, age, id } = charData;
           return (
-            <li key={`futerama-character-${charData.id}`}>
+            <li key={`futurama-character-${id}`}>
               <h3>{name.first} {name.middle} {name.last}</h3>
               <Profile>
-                <img src={images.main} alt={name.first} />
+                <Image src={images.main} alt={name.first} />
                 <Syaings><strong>{sayings[0]}</strong></Syaings>
               </Profile>
               <dl>

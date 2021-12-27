@@ -7,7 +7,7 @@ export const Navigation = () => {
     <Header>
       <div>
         <h1><Link href="/">
-          <a>Futerama</a>
+          <a>Futurama</a>
         </Link></h1>
         <nav>
           <ul>
