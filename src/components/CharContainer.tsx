@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Error, Loading } from '.';
 import { useData } from '../hooks/useData';
 import { Characters } from '../types/Characters';
@@ -22,7 +21,7 @@ export const CharContainer = () => {
             <li key={`futurama-character-${id}`}>
               <h3>{name.first} {name.middle} {name.last}</h3>
               <Profile>
-                <Image src={images.main} alt={name.first} />
+                <img src={images.main} alt={name.first} />
                 <Syaings><strong>{sayings[0]}</strong></Syaings>
               </Profile>
               <dl>
