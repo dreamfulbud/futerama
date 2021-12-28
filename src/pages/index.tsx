@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
       <Container>
         <main>
-          <img src='https://flxt.tmsimg.com/assets/p9932851_b_h8_ab.jpg' alt='' />
+          <img src='https://image.winudf.com/v2/image/Y29tLnRpbnljby5mdXR1cmFtYV9zY3JlZW5fN18xNTI2MzI5NDEyXzAzOQ/screen-7.jpg?fakeurl=1&type=.jpg' alt='' />
         </main>
       </Container>
     </div>

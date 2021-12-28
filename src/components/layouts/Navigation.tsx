@@ -75,6 +75,13 @@ const Header = styled.header`
     padding:0.5rem 2rem;
     font-weight:bold;
     font-size:1.6rem;
+    border-bottom:0 solid #111;
+    transition:all 0.3s, border 0.2s;
+
+    &:hover{
+      color:#ffe591;
+      border-bottom:3px solid #E44047;
+    }
   }
   ul{
     display:grid;
