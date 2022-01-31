@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Futurama
+<img src="https://dreamfulbud.github.io/futurama/futurama.png" alt="futurama 메인" style="max-width: 100%;"><br/>
 
-## Getting Started
+- [프로젝트 보러가기](https://dreamful-futurama.vercel.app/)  
+- [Futurama API](https://sampleapis.com/api-list/futurama)를 활용한 Futurama 소개 사이트입니다.
+- Next.js 스터디 과제로 진행된 개인 프로젝트 입니다.
+## 1. 목표
+- API를 활용한 Futurama 소개 사이트 제작
 
-First, run the development server:
+## 2. 개발 환경 및 배포
+### 2.1 사용한 기술
+- HTML / SASS(CSS) / Next.js(TypeScript) / API 사용
+### 2.2 배포
+- [vercel](https://dreamful-futurama.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 3. 프로젝트 구조와 개발일정
+### 3.1 프로젝트 구조
+  ```
+    .
+    ├── components
+    │   ├── layouts
+    │   │   ├── index.ts
+    │   │   ├── Bottom.tsx
+    │   │   ├── Layout.tsx
+    │   │   └── Navigation.tsx
+    │   ├── index.tsx
+    │   ├── Loading.tsx
+    │   ├── Error.tsx
+    │   ├── CastContainer.tsx
+    │   ├── CharContainer.tsx
+    │   ├── EpisodesContainer.tsx
+    │   ├── InfoContainer.tsx
+    │   ├── InventoryContainer.tsx
+    │   └── QuestionsContainer.tsx
+    ├── constants
+    ├── hooks
+    ├── pages
+    │   ├── _app.tsx
+    │   ├── index.tsx
+    │   ├── cast
+    │   ├── characters
+    │   ├── episodes
+    │   ├── info
+    │   ├── inventory
+    │   └── questions
+    ├── styles
+    ├── types
+    │   ├── Cast.ts
+    │   ├── Characters.ts
+    │   ├── Episodes.ts
+    │   ├── Info.ts
+    │   ├── Inventory.ts
+    │   └── Questions.ts
+    └── utils
+        └── fetcher.ts
+  ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3.2 개발일정
+- 약 5일 2021.12.24~ 12.28
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
