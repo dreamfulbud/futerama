@@ -1,5 +1,5 @@
 # Futurama
-<img src="https://dreamfulbud.github.io/futurama/futurama.png" alt="futurama 메인" style="max-width: 100%;"><br/>
+<img src="https://raw.githubusercontent.com/dreamfulbud/futurama/main/futurama.png" alt="futurama 메인" style="max-width: 100%;"><br/>
 
 - [프로젝트 보러가기](https://dreamful-futurama.vercel.app/)  
 - [Futurama API](https://sampleapis.com/api-list/futurama)를 활용한 Futurama 소개 사이트입니다.
